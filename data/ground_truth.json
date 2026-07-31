@@ -1,0 +1,2342 @@
+{
+  "lerobot/aloha_sim_insertion_human": {
+    "task": "Insert the peg into the socket.",
+    "config": {
+      "dataset": "lerobot/aloha_sim_insertion_human",
+      "seed": 0,
+      "n_positive_requested": 10,
+      "negatives": [
+        "truncate"
+      ],
+      "keyframes": 4,
+      "labeled_set_size": 20
+    },
+    "episodes": {
+      "lerobot/aloha_sim_insertion_human:ep0": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_insertion_human:ep0#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_sim_insertion_human:ep1": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_insertion_human:ep1#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_sim_insertion_human:ep2": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_insertion_human:ep2#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_sim_insertion_human:ep3": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_insertion_human:ep3#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_sim_insertion_human:ep4": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_insertion_human:ep4#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_sim_insertion_human:ep5": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_insertion_human:ep5#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_sim_insertion_human:ep6": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_insertion_human:ep6#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_sim_insertion_human:ep7": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_insertion_human:ep7#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_sim_insertion_human:ep8": {
+        "label": true,
+        "base_label": true,
+        "override": "success",
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_insertion_human:ep8#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_sim_insertion_human:ep9": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_insertion_human:ep9#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      }
+    }
+  },
+  "lerobot/aloha_sim_insertion_scripted": {
+    "task": "Insert the peg into the socket.",
+    "config": {
+      "dataset": "lerobot/aloha_sim_insertion_scripted",
+      "seed": 0,
+      "n_positive_requested": 10,
+      "negatives": [
+        "truncate"
+      ],
+      "keyframes": 4,
+      "labeled_set_size": 20
+    },
+    "episodes": {
+      "lerobot/aloha_sim_insertion_scripted:ep0": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_insertion_scripted:ep0#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_sim_insertion_scripted:ep1": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_insertion_scripted:ep1#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_sim_insertion_scripted:ep2": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_insertion_scripted:ep2#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_sim_insertion_scripted:ep3": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_insertion_scripted:ep3#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_sim_insertion_scripted:ep4": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_insertion_scripted:ep4#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_sim_insertion_scripted:ep5": {
+        "label": true,
+        "base_label": true,
+        "override": "success",
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_insertion_scripted:ep5#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_sim_insertion_scripted:ep6": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_insertion_scripted:ep6#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_sim_insertion_scripted:ep7": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_insertion_scripted:ep7#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_sim_insertion_scripted:ep8": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_insertion_scripted:ep8#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_sim_insertion_scripted:ep9": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_insertion_scripted:ep9#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      }
+    }
+  },
+  "lerobot/aloha_sim_transfer_cube_human": {
+    "task": "Pick up the cube with the right arm and transfer it to the left arm.",
+    "config": {
+      "dataset": "lerobot/aloha_sim_transfer_cube_human",
+      "seed": 0,
+      "n_positive_requested": 10,
+      "negatives": [
+        "truncate"
+      ],
+      "keyframes": 4,
+      "labeled_set_size": 20
+    },
+    "episodes": {
+      "lerobot/aloha_sim_transfer_cube_human:ep0": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_transfer_cube_human:ep0#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_sim_transfer_cube_human:ep1": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_transfer_cube_human:ep1#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_sim_transfer_cube_human:ep2": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_transfer_cube_human:ep2#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_sim_transfer_cube_human:ep3": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_transfer_cube_human:ep3#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_sim_transfer_cube_human:ep4": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_transfer_cube_human:ep4#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_sim_transfer_cube_human:ep5": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_transfer_cube_human:ep5#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_sim_transfer_cube_human:ep6": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_transfer_cube_human:ep6#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_sim_transfer_cube_human:ep7": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_transfer_cube_human:ep7#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_sim_transfer_cube_human:ep8": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_transfer_cube_human:ep8#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_sim_transfer_cube_human:ep9": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_transfer_cube_human:ep9#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      }
+    }
+  },
+  "lerobot/aloha_sim_transfer_cube_scripted": {
+    "task": "Pick up the cube with the right arm and transfer it to the left arm.",
+    "config": {
+      "dataset": "lerobot/aloha_sim_transfer_cube_scripted",
+      "seed": 0,
+      "n_positive_requested": 10,
+      "negatives": [
+        "truncate"
+      ],
+      "keyframes": 4,
+      "labeled_set_size": 20
+    },
+    "episodes": {
+      "lerobot/aloha_sim_transfer_cube_scripted:ep0": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_transfer_cube_scripted:ep0#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_sim_transfer_cube_scripted:ep1": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_transfer_cube_scripted:ep1#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_sim_transfer_cube_scripted:ep2": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_transfer_cube_scripted:ep2#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_sim_transfer_cube_scripted:ep3": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_transfer_cube_scripted:ep3#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_sim_transfer_cube_scripted:ep4": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_transfer_cube_scripted:ep4#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_sim_transfer_cube_scripted:ep5": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_transfer_cube_scripted:ep5#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_sim_transfer_cube_scripted:ep6": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_transfer_cube_scripted:ep6#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_sim_transfer_cube_scripted:ep7": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_transfer_cube_scripted:ep7#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_sim_transfer_cube_scripted:ep8": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_transfer_cube_scripted:ep8#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_sim_transfer_cube_scripted:ep9": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_sim_transfer_cube_scripted:ep9#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      }
+    }
+  },
+  "lerobot/aloha_static_battery": {
+    "task": "Place the battery into the slot of the remote controller.",
+    "config": {
+      "dataset": "lerobot/aloha_static_battery",
+      "seed": 0,
+      "n_positive_requested": 10,
+      "negatives": [
+        "truncate"
+      ],
+      "keyframes": 4,
+      "labeled_set_size": 19
+    },
+    "episodes": {
+      "lerobot/aloha_static_battery:ep0": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_battery:ep0#truncate": {
+        "label": true,
+        "base_label": false,
+        "override": "success",
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_battery:ep1": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_battery:ep1#truncate": {
+        "label": null,
+        "base_label": false,
+        "override": "exclude",
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_battery:ep2": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_battery:ep2#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_battery:ep3": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_battery:ep3#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_battery:ep4": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_battery:ep4#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_battery:ep5": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_battery:ep5#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_battery:ep6": {
+        "label": true,
+        "base_label": true,
+        "override": "success",
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_battery:ep6#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_battery:ep7": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_battery:ep7#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_battery:ep8": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_battery:ep8#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_battery:ep9": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_battery:ep9#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      }
+    }
+  },
+  "lerobot/aloha_static_coffee": {
+    "task": "Pick up the coffee pod, place it in the coffee maker, close the coffee maker, and place a cup in the coffee maker.",
+    "config": {
+      "dataset": "lerobot/aloha_static_coffee",
+      "seed": 0,
+      "n_positive_requested": 10,
+      "negatives": [
+        "truncate"
+      ],
+      "keyframes": 4,
+      "labeled_set_size": 20
+    },
+    "episodes": {
+      "lerobot/aloha_static_coffee:ep0": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_coffee:ep0#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_coffee:ep1": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_coffee:ep1#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_coffee:ep2": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_coffee:ep2#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_coffee:ep3": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_coffee:ep3#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_coffee:ep4": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_coffee:ep4#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_coffee:ep5": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_coffee:ep5#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_coffee:ep6": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_coffee:ep6#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_coffee:ep7": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_coffee:ep7#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_coffee:ep8": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_coffee:ep8#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_coffee:ep9": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_coffee:ep9#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      }
+    }
+  },
+  "lerobot/aloha_static_cups_open": {
+    "task": "Pick up the plastic cup and open its lid.",
+    "config": {
+      "dataset": "lerobot/aloha_static_cups_open",
+      "seed": 0,
+      "n_positive_requested": 10,
+      "negatives": [
+        "truncate"
+      ],
+      "keyframes": 4,
+      "labeled_set_size": 20
+    },
+    "episodes": {
+      "lerobot/aloha_static_cups_open:ep0": {
+        "label": false,
+        "base_label": true,
+        "override": "failure",
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_cups_open:ep0#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_cups_open:ep1": {
+        "label": false,
+        "base_label": true,
+        "override": "failure",
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_cups_open:ep1#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_cups_open:ep2": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_cups_open:ep2#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_cups_open:ep3": {
+        "label": false,
+        "base_label": true,
+        "override": "failure",
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_cups_open:ep3#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_cups_open:ep4": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_cups_open:ep4#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_cups_open:ep5": {
+        "label": false,
+        "base_label": true,
+        "override": "failure",
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_cups_open:ep5#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_cups_open:ep6": {
+        "label": false,
+        "base_label": true,
+        "override": "failure",
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_cups_open:ep6#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_cups_open:ep7": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_cups_open:ep7#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_cups_open:ep8": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_cups_open:ep8#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_cups_open:ep9": {
+        "label": false,
+        "base_label": true,
+        "override": "failure",
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_cups_open:ep9#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      }
+    }
+  },
+  "lerobot/aloha_static_fork_pick_up": {
+    "task": "\"Pick up the fork and place it on the plate.\"",
+    "config": {
+      "dataset": "lerobot/aloha_static_fork_pick_up",
+      "seed": 0,
+      "n_positive_requested": 10,
+      "negatives": [
+        "truncate"
+      ],
+      "keyframes": 4,
+      "labeled_set_size": 18
+    },
+    "episodes": {
+      "lerobot/aloha_static_fork_pick_up:ep0": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_fork_pick_up:ep0#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_fork_pick_up:ep1": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_fork_pick_up:ep1#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_fork_pick_up:ep2": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_fork_pick_up:ep2#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_fork_pick_up:ep3": {
+        "label": null,
+        "base_label": true,
+        "override": "exclude",
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_fork_pick_up:ep3#truncate": {
+        "label": null,
+        "base_label": false,
+        "override": "exclude",
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_fork_pick_up:ep4": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_fork_pick_up:ep4#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_fork_pick_up:ep5": {
+        "label": true,
+        "base_label": true,
+        "override": "success",
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_fork_pick_up:ep5#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_fork_pick_up:ep6": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_fork_pick_up:ep6#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_fork_pick_up:ep7": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_fork_pick_up:ep7#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_fork_pick_up:ep8": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_fork_pick_up:ep8#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_fork_pick_up:ep9": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_fork_pick_up:ep9#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      }
+    }
+  },
+  "lerobot/aloha_static_pingpong_test": {
+    "task": "Transfer one of the two balls in the right glass into the left glass, then transfer it back to the right glass.",
+    "config": {
+      "dataset": "lerobot/aloha_static_pingpong_test",
+      "seed": 0,
+      "n_positive_requested": 10,
+      "negatives": [
+        "truncate"
+      ],
+      "keyframes": 4,
+      "labeled_set_size": 20
+    },
+    "episodes": {
+      "lerobot/aloha_static_pingpong_test:ep0": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_pingpong_test:ep0#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_pingpong_test:ep1": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_pingpong_test:ep1#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_pingpong_test:ep2": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_pingpong_test:ep2#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_pingpong_test:ep3": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_pingpong_test:ep3#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_pingpong_test:ep4": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_pingpong_test:ep4#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_pingpong_test:ep5": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_pingpong_test:ep5#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_pingpong_test:ep6": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_pingpong_test:ep6#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_pingpong_test:ep7": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_pingpong_test:ep7#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_pingpong_test:ep8": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_pingpong_test:ep8#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_pingpong_test:ep9": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_pingpong_test:ep9#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      }
+    }
+  },
+  "lerobot/aloha_static_screw_driver": {
+    "task": "Pick up the screwdriver with the right arm, hand it over to the left arm then place it into the cup.",
+    "config": {
+      "dataset": "lerobot/aloha_static_screw_driver",
+      "seed": 0,
+      "n_positive_requested": 10,
+      "negatives": [
+        "truncate"
+      ],
+      "keyframes": 4,
+      "labeled_set_size": 20
+    },
+    "episodes": {
+      "lerobot/aloha_static_screw_driver:ep0": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_screw_driver:ep0#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_screw_driver:ep1": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_screw_driver:ep1#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_screw_driver:ep2": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_screw_driver:ep2#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_screw_driver:ep3": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_screw_driver:ep3#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_screw_driver:ep4": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_screw_driver:ep4#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_screw_driver:ep5": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_screw_driver:ep5#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_screw_driver:ep6": {
+        "label": false,
+        "base_label": true,
+        "override": "failure",
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_screw_driver:ep6#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_screw_driver:ep7": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_screw_driver:ep7#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_screw_driver:ep8": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_screw_driver:ep8#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_screw_driver:ep9": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_screw_driver:ep9#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      }
+    }
+  },
+  "lerobot/aloha_static_thread_velcro": {
+    "task": "Cut a piece of tape from the tape dispenser and place the cut piece of tape onto the cardboard box.",
+    "config": {
+      "dataset": "lerobot/aloha_static_thread_velcro",
+      "seed": 0,
+      "n_positive_requested": 10,
+      "negatives": [
+        "truncate"
+      ],
+      "keyframes": 4,
+      "labeled_set_size": 20
+    },
+    "episodes": {
+      "lerobot/aloha_static_thread_velcro:ep0": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_thread_velcro:ep0#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_thread_velcro:ep1": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_thread_velcro:ep1#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_thread_velcro:ep2": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_thread_velcro:ep2#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_thread_velcro:ep3": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_thread_velcro:ep3#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_thread_velcro:ep4": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_thread_velcro:ep4#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_thread_velcro:ep5": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_thread_velcro:ep5#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_thread_velcro:ep6": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_thread_velcro:ep6#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_thread_velcro:ep7": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_thread_velcro:ep7#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_thread_velcro:ep8": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_thread_velcro:ep8#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_thread_velcro:ep9": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_thread_velcro:ep9#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      }
+    }
+  },
+  "lerobot/aloha_static_towel": {
+    "task": "Tear off a piece of paper towel and place it flat on the table next to the tipped-over can.",
+    "config": {
+      "dataset": "lerobot/aloha_static_towel",
+      "seed": 0,
+      "n_positive_requested": 10,
+      "negatives": [
+        "truncate"
+      ],
+      "keyframes": 4,
+      "labeled_set_size": 20
+    },
+    "episodes": {
+      "lerobot/aloha_static_towel:ep0": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_towel:ep0#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_towel:ep1": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_towel:ep1#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_towel:ep2": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_towel:ep2#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_towel:ep3": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_towel:ep3#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_towel:ep4": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_towel:ep4#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_towel:ep5": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_towel:ep5#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_towel:ep6": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_towel:ep6#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_towel:ep7": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_towel:ep7#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_towel:ep8": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_towel:ep8#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_towel:ep9": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_towel:ep9#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      }
+    }
+  },
+  "lerobot/aloha_static_ziploc_slide": {
+    "task": "Slide open the ziploc bag.",
+    "config": {
+      "dataset": "lerobot/aloha_static_ziploc_slide",
+      "seed": 0,
+      "n_positive_requested": 10,
+      "negatives": [
+        "truncate"
+      ],
+      "keyframes": 4,
+      "labeled_set_size": 20
+    },
+    "episodes": {
+      "lerobot/aloha_static_ziploc_slide:ep0": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_ziploc_slide:ep0#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_ziploc_slide:ep1": {
+        "label": false,
+        "base_label": true,
+        "override": "failure",
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_ziploc_slide:ep1#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_ziploc_slide:ep2": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_ziploc_slide:ep2#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_ziploc_slide:ep3": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_ziploc_slide:ep3#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_ziploc_slide:ep4": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_ziploc_slide:ep4#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_ziploc_slide:ep5": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_ziploc_slide:ep5#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_ziploc_slide:ep6": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_ziploc_slide:ep6#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_ziploc_slide:ep7": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_ziploc_slide:ep7#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_ziploc_slide:ep8": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_ziploc_slide:ep8#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/aloha_static_ziploc_slide:ep9": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/aloha_static_ziploc_slide:ep9#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      }
+    }
+  },
+  "lerobot/libero_goal_image": {
+    "task": "put the bowl on the plate",
+    "config": {
+      "dataset": "lerobot/libero_goal_image",
+      "seed": 0,
+      "n_positive_requested": 5,
+      "negatives": [
+        "truncate"
+      ],
+      "keyframes": 4,
+      "labeled_set_size": 10
+    },
+    "episodes": {
+      "lerobot/libero_goal_image:ep0": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/libero_goal_image:ep0#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/libero_goal_image:ep1": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/libero_goal_image:ep1#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/libero_goal_image:ep2": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/libero_goal_image:ep2#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/libero_goal_image:ep3": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/libero_goal_image:ep3#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/libero_goal_image:ep4": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/libero_goal_image:ep4#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      }
+    }
+  },
+  "lerobot/libero_object_image": {
+    "task": "pick up the orange juice and place it in the basket",
+    "config": {
+      "dataset": "lerobot/libero_object_image",
+      "seed": 0,
+      "n_positive_requested": 5,
+      "negatives": [
+        "truncate"
+      ],
+      "keyframes": 4,
+      "labeled_set_size": 10
+    },
+    "episodes": {
+      "lerobot/libero_object_image:ep0": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/libero_object_image:ep0#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/libero_object_image:ep1": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/libero_object_image:ep1#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/libero_object_image:ep2": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/libero_object_image:ep2#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/libero_object_image:ep3": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/libero_object_image:ep3#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/libero_object_image:ep4": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/libero_object_image:ep4#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      }
+    }
+  },
+  "lerobot/svla_so101_pickplace": {
+    "task": "pink lego brick into the transparent box",
+    "config": {
+      "dataset": "lerobot/svla_so101_pickplace",
+      "seed": 0,
+      "n_positive_requested": 10,
+      "negatives": [
+        "truncate"
+      ],
+      "keyframes": 4,
+      "labeled_set_size": 20
+    },
+    "episodes": {
+      "lerobot/svla_so101_pickplace:ep0": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/svla_so101_pickplace:ep0#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/svla_so101_pickplace:ep1": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/svla_so101_pickplace:ep1#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/svla_so101_pickplace:ep2": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/svla_so101_pickplace:ep2#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/svla_so101_pickplace:ep3": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/svla_so101_pickplace:ep3#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/svla_so101_pickplace:ep4": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/svla_so101_pickplace:ep4#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/svla_so101_pickplace:ep5": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/svla_so101_pickplace:ep5#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/svla_so101_pickplace:ep6": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/svla_so101_pickplace:ep6#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/svla_so101_pickplace:ep7": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/svla_so101_pickplace:ep7#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/svla_so101_pickplace:ep8": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/svla_so101_pickplace:ep8#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      },
+      "lerobot/svla_so101_pickplace:ep9": {
+        "label": true,
+        "base_label": true,
+        "override": null,
+        "source": "demo",
+        "failure_mode": null
+      },
+      "lerobot/svla_so101_pickplace:ep9#truncate": {
+        "label": false,
+        "base_label": false,
+        "override": null,
+        "source": "synthetic",
+        "failure_mode": "truncate"
+      }
+    }
+  }
+}

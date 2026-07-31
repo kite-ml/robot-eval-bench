@@ -1,0 +1,4 @@
+# Core scoring + re-scoring (src/evaluate.py) uses only the standard library.
+# These are for regenerating the figures and for the reference selection code.
+matplotlib>=3.7
+numpy>=1.24
