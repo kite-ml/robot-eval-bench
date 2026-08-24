@@ -121,6 +121,15 @@ MODELS: List[ModelSpec] = [
               "Moonshot chat.completions (base_url=https://api.moonshot.ai/v1)", supports_native_video=False,
               token_param="max_tokens", send_temperature=False,
               notes="OpenAI-compatible; reasoning model, so temperature is left at the server default."),
+    ModelSpec("gemini-flash-37", "Gemini 3.7 flash", "gemini-3.7-flash", "gemini",
+              "google-genai generate_content", supports_native_video=True,
+              token_param="max_output_tokens", send_temperature=True,
+              notes="Successor to 3.6 flash; unlike its predecessor it holds up on video (0.89 vs 0.63)."),
+    ModelSpec("muse", "Muse Spark 1.1", "muse-spark-1.1", "openai-compatible",
+              "Meta Model API chat.completions (base_url=https://api.meta.ai/v1)", supports_native_video=False,
+              token_param="max_tokens", send_temperature=True,
+              notes="Meta Superintelligence Labs' multimodal reasoning model; frames sent as image_url data URIs. "
+                    "It spends ~400 tokens reasoning per call, so give it a generous output budget."),
 ]
 
 # Frame budgets used by the benchmark.

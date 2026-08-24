@@ -9,7 +9,7 @@ still put it down in the wrong spot, and if your evaluation can't tell those two
 runs apart, every number downstream is fiction. Before you can trust a policy, you
 have to trust the thing grading it.
 
-This repo is the open dataset and code behind that question. We put five frontier
+This repo is the open dataset and code behind that question. We put seven frontier
 models to work as robot-policy judges, scoring whether an episode accomplished its
 task from **keyframes** and from **video**, across 16 open-source LeRobot datasets.
 Everything needed to reproduce the numbers, and to benchmark a new model against
@@ -26,9 +26,11 @@ count as incorrect, since the judge was asked and didn't answer).
 | --- | --- | --- |
 | Gemini 3.1 pro | 0.88 | 0.59 |
 | Gemini 3.6 flash | **0.94** | 0.63 |
+| Gemini 3.7 flash | 0.93 | 0.89 |
 | Claude Opus 5 | 0.76 | 0.73 |
 | GPT 5.6 Sol | 0.90 | **0.92** |
 | Kimi 3 | 0.86 | 0.84 |
+| Muse Spark 1.1 | 0.83 | 0.87 |
 
 Cost per episode (USD), macro-averaged across datasets:
 
@@ -36,9 +38,11 @@ Cost per episode (USD), macro-averaged across datasets:
 | --- | --- | --- |
 | Gemini 3.1 pro | $0.0058 | $0.0005 |
 | Gemini 3.6 flash | $0.0058 | $0.0008 |
+| Gemini 3.7 flash | $0.0014 | $0.0043 |
 | Claude Opus 5 | $0.0095 | $0.0551 |
 | GPT 5.6 Sol | $0.0078 | $0.0538 |
 | Kimi 3 | $0.0019 | $0.0081 |
+| Muse Spark 1.1 | $0.0048 | $0.0086 |
 
 ![accuracy](charts/accuracy_by_approach.png)
 ![cost vs accuracy](charts/cost_vs_accuracy_keyframes.png)
@@ -46,10 +50,14 @@ Cost per episode (USD), macro-averaged across datasets:
 ### Two things flip depending on the model
 
 **Accuracy.** More frames should mean better judgment, so video should beat
-keyframes everywhere. It doesn't. The reasoning models (GPT-5.6 Sol, Kimi 3, Claude
-Opus 5) hold up or improve on video, while both Gemini judges are excellent on
-keyframes and then crater on the full clip (Flash drops from 0.94 to 0.63). The
-right approach is a property of the judge you picked, not a universal law.
+keyframes everywhere. It doesn't, and which way it breaks depends on the model. The
+reasoning models (GPT-5.6 Sol, Kimi 3, Claude Opus 5, and Meta's Muse Spark 1.1)
+hold up or improve on video. The early Gemini judges were excellent on keyframes
+and then cratered on the full clip (3.6 flash dropped from 0.94 to 0.63), but
+**Gemini 3.7 flash closes that gap**: it holds video at 0.89 while keeping keyframes
+at 0.93, which makes it a co-leader on average (0.91, tied with GPT-5.6 Sol) at
+flash-tier cost. The right approach is still a property of the judge you picked,
+not a universal law.
 
 **Cost.** For Gemini, video is the cheap option: one natively-encoded clip costs
 almost nothing, while a few full-resolution keyframes cost about ten times more.
@@ -93,6 +101,11 @@ python src/charts.py            # regenerates the figures
 its dataset, the judge and approach, the ground-truth label, the source
 (`demo` success or `synthetic` negative), the failure mode for negatives, the
 model's prediction, whether it was correct, and its confidence and latency.
+
+> Note: `episodes.jsonl` holds the per-episode judgments for the original five
+> judges. The two newest models (Gemini 3.7 flash and Muse Spark 1.1) are
+> summarized in [`data/results.json`](data/results.json) (aggregate accuracy and
+> cost, per dataset); their per-episode judgments will be backfilled here.
 
 **How episodes are selected** is in [`src/selection.py`](src/selection.py). The
 open-source episodes uploaded to HuggingFace are almost entirely *success*

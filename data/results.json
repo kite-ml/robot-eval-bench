@@ -2,23 +2,29 @@
   "models": [
     "gemini-pro",
     "gemini-flash",
+    "gemini-flash-37",
     "opus-5",
     "gpt-sol",
-    "kimi"
+    "kimi",
+    "muse"
   ],
   "model_labels": {
     "gemini-pro": "Gemini 3.1 pro",
     "gemini-flash": "Gemini 3.6 flash",
     "opus-5": "Claude Opus 5",
     "gpt-sol": "GPT 5.6 Sol",
-    "kimi": "Kimi 3"
+    "kimi": "Kimi 3",
+    "gemini-flash-37": "Gemini 3.7 flash",
+    "muse": "Muse Spark 1.1"
   },
   "model_ids": {
     "gemini-pro": "gemini-3.1-pro-preview",
     "gemini-flash": "gemini-3.6-flash",
     "opus-5": "claude-opus-5",
     "gpt-sol": "gpt-5.6-sol",
-    "kimi": "kimi-k3"
+    "kimi": "kimi-k3",
+    "gemini-flash-37": "gemini-3.7-flash",
+    "muse": "muse-spark-1.1"
   },
   "price_per_million_tokens": {
     "gemini-pro": {
@@ -40,9 +46,17 @@
     "kimi": {
       "input": 0.6,
       "output": 2.5
+    },
+    "gemini-flash-37": {
+      "input": 0.3,
+      "output": 2.5
+    },
+    "muse": {
+      "input": 1.25,
+      "output": 4.25
     }
   },
-  "cost_method": "Per dataset: total_cost/(n+n_invalid), where total_cost = input_tokens*price_in + output_tokens*price_out (or the run's baked cost_usd when tokens weren't recorded, as for the native-video Gemini runs). The model-level figure is the mean of those per-dataset per-episode costs.",
+  "cost_method": "Per dataset: total_cost/(n+n_invalid), where total_cost = input_tokens*price_in + output_tokens*price_out (or the run's baked cost_usd when tokens weren't recorded, as for the native-video Gemini runs). The model-level figure is the mean of those per-dataset per-episode costs. Gemini 3.7 flash is priced at the flash tier ($0.30/$2.50 per 1M) as a best estimate.",
   "cells": [
     {
       "model": "gemini-pro",
@@ -158,6 +172,64 @@
         "lerobot/aloha_sim_insertion_scripted": 0.85,
         "lerobot/aloha_sim_transfer_cube_human": 0.55,
         "lerobot/svla_so101_pickplace": 0.9
+      }
+    },
+    {
+      "model": "gemini-flash-37",
+      "model_label": "Gemini 3.7 flash",
+      "model_id": "gemini-3.7-flash",
+      "approach": "keyframes",
+      "mean_accuracy": 0.9281,
+      "cost_per_episode_usd": 0.001428,
+      "n_datasets": 16,
+      "input_tokens": 1326142,
+      "output_tokens": 12088,
+      "per_dataset_accuracy": {
+        "lerobot/aloha_sim_insertion_human": 1.0,
+        "lerobot/aloha_sim_insertion_scripted": 1.0,
+        "lerobot/aloha_sim_transfer_cube_human": 1.0,
+        "lerobot/aloha_sim_transfer_cube_scripted": 1.0,
+        "lerobot/aloha_static_battery": 0.85,
+        "lerobot/aloha_static_coffee": 1.0,
+        "lerobot/aloha_static_cups_open": 0.7,
+        "lerobot/aloha_static_fork_pick_up": 0.85,
+        "lerobot/aloha_static_pingpong_test": 1.0,
+        "lerobot/aloha_static_screw_driver": 0.95,
+        "lerobot/aloha_static_thread_velcro": 0.95,
+        "lerobot/aloha_static_towel": 0.9,
+        "lerobot/aloha_static_ziploc_slide": 0.85,
+        "lerobot/libero_goal_image": 1.0,
+        "lerobot/libero_object_image": 0.8,
+        "lerobot/svla_so101_pickplace": 1.0
+      }
+    },
+    {
+      "model": "gemini-flash-37",
+      "model_label": "Gemini 3.7 flash",
+      "model_id": "gemini-3.7-flash",
+      "approach": "video",
+      "mean_accuracy": 0.8938,
+      "cost_per_episode_usd": 0.004308,
+      "n_datasets": 16,
+      "input_tokens": 4477462,
+      "output_tokens": 12689,
+      "per_dataset_accuracy": {
+        "lerobot/aloha_sim_insertion_human": 1.0,
+        "lerobot/aloha_sim_insertion_scripted": 1.0,
+        "lerobot/aloha_sim_transfer_cube_human": 1.0,
+        "lerobot/aloha_sim_transfer_cube_scripted": 1.0,
+        "lerobot/aloha_static_battery": 0.8,
+        "lerobot/aloha_static_coffee": 1.0,
+        "lerobot/aloha_static_cups_open": 0.65,
+        "lerobot/aloha_static_fork_pick_up": 0.9,
+        "lerobot/aloha_static_pingpong_test": 1.0,
+        "lerobot/aloha_static_screw_driver": 1.0,
+        "lerobot/aloha_static_thread_velcro": 0.95,
+        "lerobot/aloha_static_towel": 0.95,
+        "lerobot/aloha_static_ziploc_slide": 0.9,
+        "lerobot/libero_goal_image": 0.8,
+        "lerobot/libero_object_image": 0.9,
+        "lerobot/svla_so101_pickplace": 0.45
       }
     },
     {
@@ -331,6 +403,64 @@
         "lerobot/aloha_sim_insertion_human": 0.9,
         "lerobot/aloha_sim_insertion_scripted": 0.85,
         "lerobot/aloha_sim_transfer_cube_human": 1.0,
+        "lerobot/svla_so101_pickplace": 0.95
+      }
+    },
+    {
+      "model": "muse",
+      "model_label": "Muse Spark 1.1",
+      "model_id": "muse-spark-1.1",
+      "approach": "keyframes",
+      "mean_accuracy": 0.8313,
+      "cost_per_episode_usd": 0.004827,
+      "n_datasets": 16,
+      "input_tokens": 357548,
+      "output_tokens": 234449,
+      "per_dataset_accuracy": {
+        "lerobot/aloha_sim_insertion_human": 0.85,
+        "lerobot/aloha_sim_insertion_scripted": 1.0,
+        "lerobot/aloha_sim_transfer_cube_human": 1.0,
+        "lerobot/aloha_sim_transfer_cube_scripted": 1.0,
+        "lerobot/aloha_static_battery": 0.55,
+        "lerobot/aloha_static_coffee": 0.95,
+        "lerobot/aloha_static_cups_open": 0.6,
+        "lerobot/aloha_static_fork_pick_up": 0.8,
+        "lerobot/aloha_static_pingpong_test": 0.9,
+        "lerobot/aloha_static_screw_driver": 0.95,
+        "lerobot/aloha_static_thread_velcro": 0.8,
+        "lerobot/aloha_static_towel": 0.8,
+        "lerobot/aloha_static_ziploc_slide": 0.55,
+        "lerobot/libero_goal_image": 0.7,
+        "lerobot/libero_object_image": 0.9,
+        "lerobot/svla_so101_pickplace": 0.95
+      }
+    },
+    {
+      "model": "muse",
+      "model_label": "Muse Spark 1.1",
+      "model_id": "muse-spark-1.1",
+      "approach": "video",
+      "mean_accuracy": 0.8688,
+      "cost_per_episode_usd": 0.008622,
+      "n_datasets": 16,
+      "input_tokens": 1282508,
+      "output_tokens": 238480,
+      "per_dataset_accuracy": {
+        "lerobot/aloha_sim_insertion_human": 1.0,
+        "lerobot/aloha_sim_insertion_scripted": 1.0,
+        "lerobot/aloha_sim_transfer_cube_human": 1.0,
+        "lerobot/aloha_sim_transfer_cube_scripted": 1.0,
+        "lerobot/aloha_static_battery": 0.6,
+        "lerobot/aloha_static_coffee": 1.0,
+        "lerobot/aloha_static_cups_open": 0.7,
+        "lerobot/aloha_static_fork_pick_up": 0.85,
+        "lerobot/aloha_static_pingpong_test": 0.95,
+        "lerobot/aloha_static_screw_driver": 1.0,
+        "lerobot/aloha_static_thread_velcro": 0.85,
+        "lerobot/aloha_static_towel": 1.0,
+        "lerobot/aloha_static_ziploc_slide": 0.7,
+        "lerobot/libero_goal_image": 0.5,
+        "lerobot/libero_object_image": 0.8,
         "lerobot/svla_so101_pickplace": 0.95
       }
     }

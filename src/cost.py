@@ -27,11 +27,13 @@ from typing import Dict, List, Optional
 # USD per 1,000,000 tokens (input, output). Edit to re-price the benchmark.
 # These are best-estimate list prices at the time of the run.
 PRICE_PER_MILLION: Dict[str, Dict[str, float]] = {
-    "gemini-pro":   {"input": 1.25, "output": 10.0},
-    "gemini-flash": {"input": 0.30, "output": 2.5},
-    "opus-5":       {"input": 5.00, "output": 25.0},
-    "gpt-sol":      {"input": 5.00, "output": 20.0},
-    "kimi":         {"input": 0.60, "output": 2.5},
+    "gemini-pro":      {"input": 1.25, "output": 10.0},
+    "gemini-flash":    {"input": 0.30, "output": 2.5},
+    "gemini-flash-37": {"input": 0.30, "output": 2.5},   # flash-tier, best estimate
+    "opus-5":          {"input": 5.00, "output": 25.0},
+    "gpt-sol":         {"input": 5.00, "output": 20.0},
+    "kimi":            {"input": 0.60, "output": 2.5},
+    "muse":            {"input": 1.25, "output": 4.25},  # Meta Model API list price
 }
 
 
