@@ -130,6 +130,38 @@ MODELS: List[ModelSpec] = [
               token_param="max_tokens", send_temperature=True,
               notes="Meta Superintelligence Labs' multimodal reasoning model; frames sent as image_url data URIs. "
                     "It spends ~400 tokens reasoning per call, so give it a generous output budget."),
+
+    # --- New frontier judges (registered Sep 2026, pending a benchmark run) -------
+    # These slot into the existing provider paths (gemini / anthropic / openai-compatible)
+    # and grade the identical ground-truth episodes. Numbers land in results.json once run.
+    ModelSpec("gemini-flash-38", "Gemini 3.8 flash", "gemini-3.8-flash", "gemini",
+              "google-genai generate_content", supports_native_video=True,
+              token_param="max_output_tokens", send_temperature=True,
+              notes="Successor to 3.7 flash (released 2026-09-02). Native video (inline MP4) or 4 keyframe "
+                    "stills; reasons by default at a configurable thinking level."),
+    ModelSpec("gpt-astra", "GPT-6 Astra", "gpt-6-astra", "openai-compatible",
+              "OpenAI chat.completions", supports_native_video=False,
+              token_param="max_completion_tokens", send_temperature=False,
+              notes="OpenAI flagship reasoning model (GPT-5.x line, released 2026-09-03): rejects a custom "
+                    "temperature while reasoning is on, uses max_completion_tokens, supports reasoning_effort. "
+                    "Text+image only, so video = ~16 dense frames as image_url data URIs with timestamps."),
+    ModelSpec("muse-13", "Muse Spark 1.3", "muse-spark-1.3", "openai-compatible",
+              "Meta Model API chat.completions (base_url=https://api.meta.ai/v1)", supports_native_video=False,
+              token_param="max_tokens", send_temperature=True,
+              notes="Successor to Muse Spark 1.1 (released 2026-09-02); multimodal reasoning, frames as "
+                    "image_url data URIs. Reasoning tokens per call, so give a generous output budget."),
+    ModelSpec("fable-51", "Claude Fable 5.1", "claude-fable-5-1", "anthropic",
+              "Anthropic messages API", supports_native_video=False,
+              token_param="max_tokens", send_temperature=False,
+              notes="Anthropic's most capable model (released 2026-09-01); thinking is always on, so no custom "
+                    "temperature (control depth with output_config.effort). No native video: ~16 evenly-spaced "
+                    "frames as image blocks. Premium-priced, so the most expensive judge on video."),
+    ModelSpec("opus-55", "Claude Opus 5.5", "claude-opus-5-5", "anthropic",
+              "Anthropic messages API", supports_native_video=False,
+              token_param="max_tokens", send_temperature=False,
+              notes="Successor to Opus 5 (released 2026-09-22); Opus-5 family thinks by default and rejects a "
+                    "custom temperature. No native video: ~16 evenly-spaced frames as image blocks. ~40% cheaper "
+                    "per task than Opus 5."),
 ]
 
 # Frame budgets used by the benchmark.
