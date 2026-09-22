@@ -57,6 +57,12 @@ Cost per episode (USD), macro-averaged across datasets:
 > original run's encodings. They are directly comparable **to each other**; treat
 > small decimal gaps against the first seven rows as harness noise, not model deltas.
 > To compare a new judge against an old one rigorously, re-run both in one harness.
+>
+> **Calibrated.** Re-running **Gemini 3.7 flash** through this harness scores it at
+> 0.909 keyframes / 0.875 video against its published 0.93 / 0.89, so the harness reads
+> roughly 1-2 points low. Gemini 3.8 flash scores 0.897 / 0.828 in the same harness, so
+> it is genuinely the weaker judge here (4.7 points on video), by more than double the
+> harness offset.
 
 ![accuracy](charts/accuracy_by_approach.png)
 ![cost vs accuracy](charts/cost_vs_accuracy_keyframes.png)
