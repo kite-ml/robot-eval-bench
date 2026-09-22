@@ -85,15 +85,18 @@ def rescore_from_data() -> None:
             b["pred"][e["episode_id"]] = e["predicted"]
             b["truth"][e["episode_id"]] = e["ground_truth"]
 
+    # The original five lead the table; any other judge with per-episode data
+    # (later additions backfilled into episodes.jsonl) follows in discovery order.
     order = ["Gemini 3.1 pro", "Gemini 3.6 flash", "Claude Opus 5", "GPT 5.6 Sol", "Kimi 3"]
-    print(f"{'judge':<17}{'keyframes':>11}{'video':>9}   (mean accuracy across datasets)")
+    order += [lbl for lbl in dict.fromkeys(lbl for lbl, _ in per) if lbl not in order]
+    print(f"{'judge':<19}{'keyframes':>11}{'video':>9}   (mean accuracy across datasets)")
     for label in order:
         row = [label]
         for ap in ("keyframes", "video"):
             accs = [score(d["pred"], d["truth"])["accuracy"] for d in per[(label, ap)].values()]
             accs = [a for a in accs if a is not None]
             row.append(f"{mean(accs):.2f}" if accs else "  - ")
-        print(f"{row[0]:<17}{row[1]:>11}{row[2]:>9}")
+        print(f"{row[0]:<19}{row[1]:>11}{row[2]:>9}")
 
 
 if __name__ == "__main__":

@@ -6,7 +6,10 @@
     "opus-5",
     "gpt-sol",
     "kimi",
-    "muse"
+    "muse",
+    "gemini-flash-38",
+    "gpt-astra",
+    "muse-13"
   ],
   "model_labels": {
     "gemini-pro": "Gemini 3.1 pro",
@@ -15,7 +18,10 @@
     "gpt-sol": "GPT 5.6 Sol",
     "kimi": "Kimi 3",
     "gemini-flash-37": "Gemini 3.7 flash",
-    "muse": "Muse Spark 1.1"
+    "muse": "Muse Spark 1.1",
+    "gemini-flash-38": "Gemini 3.8 flash",
+    "gpt-astra": "GPT-6 Astra",
+    "muse-13": "Muse Spark 1.3"
   },
   "model_ids": {
     "gemini-pro": "gemini-3.1-pro-preview",
@@ -24,7 +30,10 @@
     "gpt-sol": "gpt-5.6-sol",
     "kimi": "kimi-k3",
     "gemini-flash-37": "gemini-3.7-flash",
-    "muse": "muse-spark-1.1"
+    "muse": "muse-spark-1.1",
+    "gemini-flash-38": "gemini-3.8-flash",
+    "gpt-astra": "gpt-6-astra",
+    "muse-13": "muse-spark-1.3"
   },
   "price_per_million_tokens": {
     "gemini-pro": {
@@ -52,6 +61,18 @@
       "output": 2.5
     },
     "muse": {
+      "input": 1.25,
+      "output": 4.25
+    },
+    "gemini-flash-38": {
+      "input": 0.75,
+      "output": 3.75
+    },
+    "gpt-astra": {
+      "input": 10.0,
+      "output": 50.0
+    },
+    "muse-13": {
       "input": 1.25,
       "output": 4.25
     }
@@ -463,6 +484,181 @@
         "lerobot/libero_object_image": 0.8,
         "lerobot/svla_so101_pickplace": 0.95
       }
+    },
+    {
+      "model": "gemini-flash-38",
+      "model_label": "Gemini 3.8 flash",
+      "model_id": "gemini-3.8-flash",
+      "approach": "keyframes",
+      "mean_accuracy": 0.8969,
+      "cost_per_episode_usd": 0.004495,
+      "n_datasets": 16,
+      "input_tokens": null,
+      "output_tokens": null,
+      "per_dataset_accuracy": {
+        "lerobot/aloha_sim_insertion_human": 1.0,
+        "lerobot/aloha_sim_insertion_scripted": 1.0,
+        "lerobot/aloha_sim_transfer_cube_human": 1.0,
+        "lerobot/aloha_sim_transfer_cube_scripted": 1.0,
+        "lerobot/aloha_static_battery": 0.95,
+        "lerobot/aloha_static_coffee": 1.0,
+        "lerobot/aloha_static_cups_open": 0.65,
+        "lerobot/aloha_static_fork_pick_up": 0.9,
+        "lerobot/aloha_static_pingpong_test": 0.9,
+        "lerobot/aloha_static_screw_driver": 0.9,
+        "lerobot/aloha_static_thread_velcro": 0.85,
+        "lerobot/aloha_static_towel": 0.9,
+        "lerobot/aloha_static_ziploc_slide": 0.9,
+        "lerobot/libero_goal_image": 0.6,
+        "lerobot/libero_object_image": 0.8,
+        "lerobot/svla_so101_pickplace": 1.0
+      }
+    },
+    {
+      "model": "gemini-flash-38",
+      "model_label": "Gemini 3.8 flash",
+      "model_id": "gemini-3.8-flash",
+      "approach": "video",
+      "mean_accuracy": 0.8281,
+      "cost_per_episode_usd": 0.001267,
+      "n_datasets": 16,
+      "input_tokens": null,
+      "output_tokens": null,
+      "per_dataset_accuracy": {
+        "lerobot/aloha_sim_insertion_human": 1.0,
+        "lerobot/aloha_sim_insertion_scripted": 1.0,
+        "lerobot/aloha_sim_transfer_cube_human": 0.9,
+        "lerobot/aloha_sim_transfer_cube_scripted": 1.0,
+        "lerobot/aloha_static_battery": 0.8,
+        "lerobot/aloha_static_coffee": 0.8,
+        "lerobot/aloha_static_cups_open": 0.5,
+        "lerobot/aloha_static_fork_pick_up": 0.7,
+        "lerobot/aloha_static_pingpong_test": 0.9,
+        "lerobot/aloha_static_screw_driver": 0.85,
+        "lerobot/aloha_static_thread_velcro": 0.85,
+        "lerobot/aloha_static_towel": 0.95,
+        "lerobot/aloha_static_ziploc_slide": 0.9,
+        "lerobot/libero_goal_image": 0.6,
+        "lerobot/libero_object_image": 0.5,
+        "lerobot/svla_so101_pickplace": 1.0
+      }
+    },
+    {
+      "model": "gpt-astra",
+      "model_label": "GPT-6 Astra",
+      "model_id": "gpt-6-astra",
+      "approach": "keyframes",
+      "mean_accuracy": 0.9219,
+      "cost_per_episode_usd": 0.01295,
+      "n_datasets": 16,
+      "input_tokens": null,
+      "output_tokens": null,
+      "per_dataset_accuracy": {
+        "lerobot/aloha_sim_insertion_human": 1.0,
+        "lerobot/aloha_sim_insertion_scripted": 1.0,
+        "lerobot/aloha_sim_transfer_cube_human": 1.0,
+        "lerobot/aloha_sim_transfer_cube_scripted": 1.0,
+        "lerobot/aloha_static_battery": 1.0,
+        "lerobot/aloha_static_coffee": 1.0,
+        "lerobot/aloha_static_cups_open": 0.75,
+        "lerobot/aloha_static_fork_pick_up": 0.8,
+        "lerobot/aloha_static_pingpong_test": 1.0,
+        "lerobot/aloha_static_screw_driver": 0.95,
+        "lerobot/aloha_static_thread_velcro": 0.85,
+        "lerobot/aloha_static_towel": 0.95,
+        "lerobot/aloha_static_ziploc_slide": 0.95,
+        "lerobot/libero_goal_image": 0.6,
+        "lerobot/libero_object_image": 0.9,
+        "lerobot/svla_so101_pickplace": 1.0
+      }
+    },
+    {
+      "model": "gpt-astra",
+      "model_label": "GPT-6 Astra",
+      "model_id": "gpt-6-astra",
+      "approach": "video",
+      "mean_accuracy": 0.9187,
+      "cost_per_episode_usd": 0.037805,
+      "n_datasets": 16,
+      "input_tokens": null,
+      "output_tokens": null,
+      "per_dataset_accuracy": {
+        "lerobot/aloha_sim_insertion_human": 1.0,
+        "lerobot/aloha_sim_insertion_scripted": 1.0,
+        "lerobot/aloha_sim_transfer_cube_human": 1.0,
+        "lerobot/aloha_sim_transfer_cube_scripted": 1.0,
+        "lerobot/aloha_static_battery": 0.9,
+        "lerobot/aloha_static_coffee": 1.0,
+        "lerobot/aloha_static_cups_open": 0.65,
+        "lerobot/aloha_static_fork_pick_up": 0.85,
+        "lerobot/aloha_static_pingpong_test": 1.0,
+        "lerobot/aloha_static_screw_driver": 0.95,
+        "lerobot/aloha_static_thread_velcro": 0.9,
+        "lerobot/aloha_static_towel": 1.0,
+        "lerobot/aloha_static_ziploc_slide": 0.95,
+        "lerobot/libero_goal_image": 0.6,
+        "lerobot/libero_object_image": 0.9,
+        "lerobot/svla_so101_pickplace": 1.0
+      }
+    },
+    {
+      "model": "muse-13",
+      "model_label": "Muse Spark 1.3",
+      "model_id": "muse-spark-1.3",
+      "approach": "keyframes",
+      "mean_accuracy": 0.8187,
+      "cost_per_episode_usd": 0.004989,
+      "n_datasets": 16,
+      "input_tokens": null,
+      "output_tokens": null,
+      "per_dataset_accuracy": {
+        "lerobot/aloha_sim_insertion_human": 1.0,
+        "lerobot/aloha_sim_insertion_scripted": 1.0,
+        "lerobot/aloha_sim_transfer_cube_human": 1.0,
+        "lerobot/aloha_sim_transfer_cube_scripted": 1.0,
+        "lerobot/aloha_static_battery": 0.8,
+        "lerobot/aloha_static_coffee": 0.85,
+        "lerobot/aloha_static_cups_open": 0.65,
+        "lerobot/aloha_static_fork_pick_up": 0.7,
+        "lerobot/aloha_static_pingpong_test": 0.7,
+        "lerobot/aloha_static_screw_driver": 0.7,
+        "lerobot/aloha_static_thread_velcro": 0.75,
+        "lerobot/aloha_static_towel": 0.95,
+        "lerobot/aloha_static_ziploc_slide": 0.6,
+        "lerobot/libero_goal_image": 0.6,
+        "lerobot/libero_object_image": 0.8,
+        "lerobot/svla_so101_pickplace": 1.0
+      }
+    },
+    {
+      "model": "muse-13",
+      "model_label": "Muse Spark 1.3",
+      "model_id": "muse-spark-1.3",
+      "approach": "video",
+      "mean_accuracy": 0.8656,
+      "cost_per_episode_usd": 0.008827,
+      "n_datasets": 16,
+      "input_tokens": null,
+      "output_tokens": null,
+      "per_dataset_accuracy": {
+        "lerobot/aloha_sim_insertion_human": 1.0,
+        "lerobot/aloha_sim_insertion_scripted": 1.0,
+        "lerobot/aloha_sim_transfer_cube_human": 1.0,
+        "lerobot/aloha_sim_transfer_cube_scripted": 1.0,
+        "lerobot/aloha_static_battery": 0.8,
+        "lerobot/aloha_static_coffee": 0.9,
+        "lerobot/aloha_static_cups_open": 0.65,
+        "lerobot/aloha_static_fork_pick_up": 0.85,
+        "lerobot/aloha_static_pingpong_test": 0.8,
+        "lerobot/aloha_static_screw_driver": 1.0,
+        "lerobot/aloha_static_thread_velcro": 0.7,
+        "lerobot/aloha_static_towel": 1.0,
+        "lerobot/aloha_static_ziploc_slide": 0.65,
+        "lerobot/libero_goal_image": 0.6,
+        "lerobot/libero_object_image": 0.9,
+        "lerobot/svla_so101_pickplace": 1.0
+      }
     }
-  ]
+  ],
+  "harness_note": "Rows for gemini-flash-38, gpt-astra and muse-13 (Sep 2026) were produced by an independent re-implementation of the judging harness: same datasets, seeds, n_positive and negative-synthesis from ground_truth.json, but frames were re-extracted (6fps pool, 512px) rather than reusing the original run's encodings. They are directly comparable to each other; treat small decimal differences against the original seven rows as harness noise rather than model deltas."
 }

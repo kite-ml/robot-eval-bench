@@ -9,7 +9,7 @@ still put it down in the wrong spot, and if your evaluation can't tell those two
 runs apart, every number downstream is fiction. Before you can trust a policy, you
 have to trust the thing grading it.
 
-This repo is the open dataset and code behind that question. We put seven frontier
+This repo is the open dataset and code behind that question. We put ten frontier
 models to work as robot-policy judges, scoring whether an episode accomplished its
 task from **keyframes** and from **video**, across 16 open-source LeRobot datasets.
 Everything needed to reproduce the numbers, and to benchmark a new model against
@@ -31,6 +31,9 @@ count as incorrect, since the judge was asked and didn't answer).
 | GPT 5.6 Sol | 0.90 | **0.92** |
 | Kimi 3 | 0.86 | 0.84 |
 | Muse Spark 1.1 | 0.83 | 0.87 |
+| Gemini 3.8 flash † | 0.90 | 0.83 |
+| GPT-6 Astra † | **0.92** | **0.92** |
+| Muse Spark 1.3 † | 0.82 | 0.87 |
 
 Cost per episode (USD), macro-averaged across datasets:
 
@@ -43,6 +46,17 @@ Cost per episode (USD), macro-averaged across datasets:
 | GPT 5.6 Sol | $0.0078 | $0.0538 |
 | Kimi 3 | $0.0019 | $0.0081 |
 | Muse Spark 1.1 | $0.0048 | $0.0086 |
+| Gemini 3.8 flash † | $0.0045 | $0.0013 |
+| GPT-6 Astra † | $0.0129 | $0.0378 |
+| Muse Spark 1.3 † | $0.0050 | $0.0088 |
+
+> † **Harness note.** The three Sep 2026 judges were run through an independent
+> re-implementation of the harness: same datasets, seeds, `n_positive` and
+> negative-synthesis from `ground_truth.json` (so they grade the same episodes and
+> labels), but frames were re-extracted (6fps pool, 512px) rather than reusing the
+> original run's encodings. They are directly comparable **to each other**; treat
+> small decimal gaps against the first seven rows as harness noise, not model deltas.
+> To compare a new judge against an old one rigorously, re-run both in one harness.
 
 ![accuracy](charts/accuracy_by_approach.png)
 ![cost vs accuracy](charts/cost_vs_accuracy_keyframes.png)
@@ -103,9 +117,10 @@ its dataset, the judge and approach, the ground-truth label, the source
 model's prediction, whether it was correct, and its confidence and latency.
 
 > Note: `episodes.jsonl` holds the per-episode judgments for the original five
-> judges. The two newest models (Gemini 3.7 flash and Muse Spark 1.1) are
-> summarized in [`data/results.json`](data/results.json) (aggregate accuracy and
-> cost, per dataset); their per-episode judgments will be backfilled here.
+> judges **and** the three Sep 2026 additions (Gemini 3.8 flash, GPT-6 Astra,
+> Muse Spark 1.3). Gemini 3.7 flash and Muse Spark 1.1 are still summarized in
+> [`data/results.json`](data/results.json) only (aggregate accuracy and cost, per
+> dataset); their per-episode judgments will be backfilled here.
 
 **How episodes are selected** is in [`src/selection.py`](src/selection.py). The
 open-source episodes uploaded to HuggingFace are almost entirely *success*
@@ -148,19 +163,17 @@ model grades against exactly the same episodes and labels every other model saw:
 3. Encode per approach (`episode.sample_frames(4)` for keyframes; native MP4 or 16
    frames for video), call your judge, and `evaluate.score(predictions, labels)`.
 
-### Registered but not yet run (Sep 2026)
+### Sep 2026 additions
 
-Five new frontier judges are registered in the `MODELS` table and price list, and
-grade the identical ground truth, but haven't been benchmarked yet — their rows land
-in the results tables once a run completes:
+Three new frontier judges were benchmarked in September 2026 and are in the tables
+above: **Gemini 3.8 flash** (`gemini-3.8-flash`), **GPT-6 Astra** (`gpt-6-astra`) and
+**Muse Spark 1.3** (`muse-spark-1.3`) — 1,800 judgments across all 16 datasets, 3
+abstentions, 0 errors. Their per-episode judgments are in `data/episodes.jsonl`, so
+`python src/evaluate.py` re-scores them from raw data like every other judge. See the
+harness note under Results before diffing them against the original seven.
 
-| Judge | Model ID | Provider | Native video | Price (in / out per 1M) |
-| --- | --- | --- | --- | --- |
-| Gemini 3.8 flash | `gemini-3.8-flash` | Google | yes | $0.75 / $3.75 |
-| GPT-6 Astra | `gpt-6-astra` | OpenAI | no (dense frames) | $10 / $50 |
-| Muse Spark 1.3 | `muse-spark-1.3` | Meta | no (dense frames) | $1.25 / $4.25 |
-| Claude Fable 5.1 | `claude-fable-5-1` | Anthropic | no (dense frames) | $10 / $50 |
-| Claude Opus 5.5 | `claude-opus-5-5` | Anthropic | no (dense frames) | $4 / $20 |
+**Claude Fable 5.1** (`claude-fable-5-1`) and **Claude Opus 5.5** (`claude-opus-5-5`)
+are registered in the `MODELS` table and price list but not yet run.
 
 ## License
 
