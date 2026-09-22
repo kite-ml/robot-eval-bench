@@ -34,6 +34,12 @@ PRICE_PER_MILLION: Dict[str, Dict[str, float]] = {
     "gpt-sol":         {"input": 5.00, "output": 20.0},
     "kimi":            {"input": 0.60, "output": 2.5},
     "muse":            {"input": 1.25, "output": 4.25},  # Meta Model API list price
+    # New frontier judges (Sep 2026 list prices).
+    "gemini-flash-38": {"input": 0.75, "output": 3.75},  # cached input $0.075
+    "gpt-astra":       {"input": 10.00, "output": 50.0}, # cached $1, Fast mode 2x
+    "muse-13":         {"input": 1.25, "output": 4.25},  # Meta Model API standard tier
+    "fable-51":        {"input": 10.00, "output": 50.0}, # Fable-tier list price
+    "opus-55":         {"input": 4.00, "output": 20.0},  # ~20% under Opus 5
 }
 
 

@@ -148,6 +148,20 @@ model grades against exactly the same episodes and labels every other model saw:
 3. Encode per approach (`episode.sample_frames(4)` for keyframes; native MP4 or 16
    frames for video), call your judge, and `evaluate.score(predictions, labels)`.
 
+### Registered but not yet run (Sep 2026)
+
+Five new frontier judges are registered in the `MODELS` table and price list, and
+grade the identical ground truth, but haven't been benchmarked yet — their rows land
+in the results tables once a run completes:
+
+| Judge | Model ID | Provider | Native video | Price (in / out per 1M) |
+| --- | --- | --- | --- | --- |
+| Gemini 3.8 flash | `gemini-3.8-flash` | Google | yes | $0.75 / $3.75 |
+| GPT-6 Astra | `gpt-6-astra` | OpenAI | no (dense frames) | $10 / $50 |
+| Muse Spark 1.3 | `muse-spark-1.3` | Meta | no (dense frames) | $1.25 / $4.25 |
+| Claude Fable 5.1 | `claude-fable-5-1` | Anthropic | no (dense frames) | $10 / $50 |
+| Claude Opus 5.5 | `claude-opus-5-5` | Anthropic | no (dense frames) | $4 / $20 |
+
 ## License
 
 MIT, see [LICENSE](LICENSE). The underlying episodes are from the
